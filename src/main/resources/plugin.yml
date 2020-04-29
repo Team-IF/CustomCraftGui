@@ -3,3 +3,10 @@ version: @version@
 main: teamif.customcraftgui.CustomCraftGui
 authors: [Team_IF]
 website: https://teamif.io
+commands:
+  작업장:
+    description: Your description
+    usage: /<command>
+  작업실:
+    description: Your description
+    usage: /<command>
