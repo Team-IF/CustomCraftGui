@@ -1,5 +1,5 @@
 plugins {
-    java
+    kotlin("jvm") version "1.3.72"
     id("org.jetbrains.dokka") version "0.10.0"
 }
 
@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    compileOnly(kotlin("stdlib-jdk8"))
     compileOnly("org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT")
 }
 

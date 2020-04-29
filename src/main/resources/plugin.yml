@@ -1,6 +1,6 @@
 name: CustomCraftGui
 version: 1.0-SNAPSHOT
-main: teamif.customcraftgui.CustomCraftGui
+main: io.teamif.customcraftgui.CustomCraftGuiPlugin
 authors: [Team_IF]
 website: https://teamif.io
 commands:
