@@ -1,12 +1,35 @@
 name: CustomCraftGui
 version: 1.0-SNAPSHOT
+description: Custom CraftTable in GUI written in Kotlin
+api-version: "1.12"
+load: POSTWORLD
 main: io.teamif.customcraftgui.CustomCraftGuiPlugin
-authors: [Team_IF]
+authors: [Patrick, Coder_Iro]
 website: https://teamif.io
+database: false
+depend: [Kotlin]
+prefix: CCGUI
 commands:
   작업장:
-    description: Your description
-    usage: /<command>
+    description: 작업장 열기 명령어
+    permission: ccgui.command.workspace
+    permission-message: 작업장 열기 명령어를 사용할 권한이 없습니다.
+    usage: "사용법: /<command> help"
   작업실:
-    description: Your description
-    usage: /<command>
+    description: 작업실 열기 명령어
+    permission: ccgui.command.room
+    permission-message: 작업장 열기 명령어를 사용할 권한이 없습니다.
+    usage: "사용법: /<command> help"
+permissions:
+  ccgui.command:
+    default: op
+  ccgui.command.*:
+    default: op
+    children:
+      ccgui.command.workspace: true
+      ccgui.command.room: true
+  ccgui.command.workspace: &command
+    default: op
+    children:
+      ccgui.command: true
+  ccgui.command.room: *command
