@@ -1,0 +1,5 @@
+name: CustomCraftGui
+version: @version@
+main: teamif.customcraftgui.CustomCraftGui
+authors: [Team_IF]
+website: https://teamif.io
