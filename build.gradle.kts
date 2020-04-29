@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.dokka") version "0.10.0"
 }
 
-group = "teamif"
+group = "io.teamif"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -19,10 +19,8 @@ dependencies {
 }
 
 tasks {
-    compileJava {
-        options.encoding = "UTF-8"
-        targetCompatibility = "1.8"
-        sourceCompatibility = "1.8"
+    compileKotlin {
+        kotlinOptions.jvmTarget = "1.8"
     }
 
     dokka {
