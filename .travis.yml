@@ -1,18 +1,18 @@
 language: java
 os: linux
-dist: xenial
+dist: bionic
 jdk:
 - openjdk8
-- openjdk10
-- openjdk11
+before_install:
+  - chmod +x ./gradlew
 cache:
   directories:
   - "$HOME/.m2"
   - "$HOME/.gradle"
-deploy:
-  provider: releases
-  skip_cleanup: true
-  on:
-    tags: true
-  api_key:
-    secure: qZysBxHyeAKg39EqT7+8z7WfRhxNTl23k3WckCXSbTp3ZBE5XQj5GuYMH7kd0lqJtI0/20us3Z+Wg64cSrwkyDWFAsSBpcx8vqGACZTjpUrDMNF/GrjqQriBrByFy2lk8kTnvWFgBqay5KRONkcsEEgnTEWMBdLgOs1qFWO3OxOk3F5AXRGzhZCJxnHiAIVSWPchL46phLfjkbw3QpYF4uEOk/A3EveKOvwm3WyirBpgIU8UscT/w9UnjX5XWoR4i2prt1pmtRM1yki7Iyb6IGQYqsqk4vixUU+LJRGaQM1lMgz7iQkIfSvi/BMnp8HLMuQDQInOFcSYhhvsIsL73mVdzccdtMU1OJ+fg2yJfH7l8/VlXSuo9EDtGKLUMtTr8EbrdwbeOD8K1tMdxh4NPcMmvuVEMuoRtdJAepe3f5Y0uFJtOT84uDXGdOcnl5RmzujHeuI/LgltZFG9kgXU7FGOO55+/dGIlWaCnXD5a8q+mfP5nm4CXPyCowto3XEymMOitUGs/lQFx2VUx1SsKrIUOQEVforZkdCneGjyC+NgIDsQ02/QRO8fv4twHPKuat34j8QsGqSw0JZJl+VpVC6Kp+60ESWR3jP2tCJHFT5kAxSJJox1BbcV3Ss/TFfdZsBQ5RBOaa2ybkxPC6gEUwM+G2ilWmieehDgIJL4H2A=
+# deploy:
+#   provider: releases
+#   skip_cleanup: true
+#   on:
+#     tags: true
+#   api_key:
+#     secure: qZysBxHyeAKg39EqT7+8z7WfRhxNTl23k3WckCXSbTp3ZBE5XQj5GuYMH7kd0lqJtI0/20us3Z+Wg64cSrwkyDWFAsSBpcx8vqGACZTjpUrDMNF/GrjqQriBrByFy2lk8kTnvWFgBqay5KRONkcsEEgnTEWMBdLgOs1qFWO3OxOk3F5AXRGzhZCJxnHiAIVSWPchL46phLfjkbw3QpYF4uEOk/A3EveKOvwm3WyirBpgIU8UscT/w9UnjX5XWoR4i2prt1pmtRM1yki7Iyb6IGQYqsqk4vixUU+LJRGaQM1lMgz7iQkIfSvi/BMnp8HLMuQDQInOFcSYhhvsIsL73mVdzccdtMU1OJ+fg2yJfH7l8/VlXSuo9EDtGKLUMtTr8EbrdwbeOD8K1tMdxh4NPcMmvuVEMuoRtdJAepe3f5Y0uFJtOT84uDXGdOcnl5RmzujHeuI/LgltZFG9kgXU7FGOO55+/dGIlWaCnXD5a8q+mfP5nm4CXPyCowto3XEymMOitUGs/lQFx2VUx1SsKrIUOQEVforZkdCneGjyC+NgIDsQ02/QRO8fv4twHPKuat34j8QsGqSw0JZJl+VpVC6Kp+60ESWR3jP2tCJHFT5kAxSJJox1BbcV3Ss/TFfdZsBQ5RBOaa2ybkxPC6gEUwM+G2ilWmieehDgIJL4H2A=
