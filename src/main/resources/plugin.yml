@@ -7,7 +7,7 @@ main: io.teamif.customcraftgui.CustomCraftGuiPlugin
 authors: [Patrick, Coder_Iro]
 website: https://github.com/Team-IF
 database: false
-depend: [Kotlin]
+depend: [Kotlin, SmartInvs]
 prefix: CCGUI
 
 commands:
