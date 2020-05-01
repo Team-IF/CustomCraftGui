@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin
 @Suppress("unused")
 class CustomCraftGuiPlugin : JavaPlugin() {
     override fun onEnable() {
-        getCommand("작업실").executor = CommandCraftWorkspace()
-        getCommand("작업창").executor = CommandCraftRoom()
+        getCommand("작업실")?.executor = CommandCraftWorkspace()
+        getCommand("작업창")?.executor = CommandCraftRoom()
     }
 }
