@@ -11,12 +11,13 @@ repositories {
     maven("https://dl.bintray.com/kotlin/dokka")
     maven("https://oss.sonatype.org/content/repositories/snapshots/")
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     compileOnly(kotlin("stdlib-jdk8"))
     compileOnly("org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT")
-    compileOnly("fr.minuskube.inv:smart-invs:1.2.7")
+    compileOnly("com.github.MinusKube:SmartInvs:1.3.0-1b22dd13bf-1")
 }
 
 tasks {
