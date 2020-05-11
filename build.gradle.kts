@@ -17,7 +17,7 @@ repositories {
 dependencies {
     compileOnly(kotlin("stdlib-jdk8"))
     compileOnly("org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT")
-    compileOnly("com.github.MinusKube:SmartInvs:1.3.0-1b22dd13bf-1")
+    compileOnly("com.github.MinusKube:SmartInvs:1.3.0-SNAPSHOT")
 }
 
 tasks {

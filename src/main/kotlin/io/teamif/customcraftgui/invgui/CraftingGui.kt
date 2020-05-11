@@ -13,7 +13,8 @@ import org.bukkit.inventory.ItemStack
 
 class CraftingGui : InventoryProvider {
     companion object {
-        val INVENTORY: SmartInventory = builder().id("craftGUI").provider(CraftingGui()).size(5, 9)
+        val INVENTORY: SmartInventory = builder().id("craftGUI")
+                .provider(CraftingGui()).size(5, 9)
                 .title("${ChatColor.BLUE}Sample Crafting GUI!")
                 .build()
     }
